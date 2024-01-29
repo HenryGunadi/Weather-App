@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/final.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+  </head>
+  <body class="flex justify-center items-center h-screen">
+    <!-- container -->
+    <div class="font-inter max-w-sm bg-blue-500 rounded-lg flex flex-col shadow pb-12 px-6" style="box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.8)" id="container">
+      <form class="m-2 mt-9 mb-9 flex justify-center weatherForm">
+        <input type="text " placeholder="Enter city.." class="text-white p-1 outline-none bg-transparent border-b border-solid border-white mr-5 cityInput" />
+        <button type="submit" class="bg-white text-blue-600 text-sm py-1 px-4 rounded" id="submit">Submit</button>
+      </form>
+      <h1 class="font-bold text-3xl text-center text-yellow-400 tracking-widest">Weather App</h1>
+
+      <div class="error"></div>
+
+      <div class="w-full mt-6">
+        <h1 class="text-center text-white font-semibold text-2xl mb-6" id="city"></h1>
+        <h3 class="text-center text-white" id="weather"></h3>
+        <h3 class="text-center text-white" id="detailed"></h3>
+        <h1 id="weather-img" class="text-9xl text-center"></h1>
+      </div>
+
+      <h1 class="text-center text-5xl text-white" id="degree"></h1>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
